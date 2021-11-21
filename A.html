@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>이원호</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
+        <style>
+            .name{text-align: right;}
+            ol{padding:0;}
+            ol > li{color:#888;padding:5px;}
+            ol > li::after{clear: both;content:"";display: block;}
+            label{padding-left:15px;color:#333;}
+            .fail{background-color:red;color:#fff;}
+            strong{color:red;}
+            #resultarea p{text-align: left !important;color: #888;font-size: 0.8em;margin-top: 0;}
+        </style>
+	</head>
+	<body>
+		<div id="wrapper">
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>사칙 연산 퀴즈</legend>
+                        <p>자신의 이름과 제시된 연산의 답을 입력 한 후<br/>완료 버튼을 눌러주세요.</p>
+                        <div class="name">
+                            <label for="name">이름 : </label>
+                            <input type="text" id="name" name="name"/>
+                        </div>
+                        <ol>
+                            <li>
+                                <label for="add">5 + 6 = </label>
+                                <input type="number"/>  
+                            </li>
+                            <li>
+                                <label for="sub">8 - 3 = </label>
+                                <input type="number"/>  
+                            </li>
+                            <li>
+                                <label for="multi">7 x 6 = </label>
+                                <input type="number"/>  
+                            </li>
+                            <li>
+                                <label for="div">15 ÷ 3 = </label>
+                                <input type="number"/>  
+                            </li>
+                            <li>
+                                <label for="asmd">8 + 6 - 3 x 2 ÷ 2 = </label>
+                                <input type="number"/>  
+                            </li>
+                        </ol>
+                        <div style="text-align: center;">
+                            <input type="button" name="button" value="완료">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <form>
+                    <fieldset id="resultarea">
+
+                    </fieldset>
+                </form>
+            </section>
+		</div>
+	</body>
+</html>
