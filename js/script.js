@@ -6,9 +6,9 @@ function init () {
 }
 
 function quizCheck(){
-    var examineeName = document.forms[0].name.value; // 응시자 이름
+    var examineeName = document.forms[0].name.value; // 시험 응시자 이름
     var answer = [5+6,8-3,7*6,15/3,8+6-(3*2)/2]; //시험 문제의 정답
-    var correct = 0; //정답 개수 카운트
+    var correct = 0; //정답을 맞춘 개수 카운트
     var questionElement = new Array; // 5개의 문제가 차례로 들어가는 변수
     var today = new Date(); // 날짜 작성을 위한 변수
     var year = today.getFullYear()
